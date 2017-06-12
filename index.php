@@ -35,12 +35,17 @@
 
 
 	//alterando um usuario
+//	$usuario = new Usuario();
+//	$usuario->loadByid(8);
+//	$usuario->update('professor','2222222');
+//	echo $usuario;
+
+
+	//Deletando linha
 	$usuario = new Usuario();
+	$usuario->loadByid(7);
 
-	$usuario->loadByid(8);
-
-	$usuario->update('professor','2222222');
+	$usuario->delete();
 
 	echo $usuario;
-
  ?>
