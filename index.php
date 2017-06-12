@@ -28,12 +28,19 @@
 	//$usuario->login("johnny","987654");
 	//echo $usuario;
 
-	$aluno = new Usuario("aluno","@lun0");
+	//criando um novo usuario
+	//$aluno = new Usuario("aluno","@lun0");
+	//$aluno->insert();
+	//echo $aluno;
 
 
-	$aluno->insert();
+	//alterando um usuario
+	$usuario = new Usuario();
 
-	echo $aluno;
+	$usuario->loadByid(8);
 
+	$usuario->update('professor','2222222');
+
+	echo $usuario;
 
  ?>
