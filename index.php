@@ -24,7 +24,16 @@
 
 
 	//carrega um usuario usando login e senha
-	$usuario = new Usuario();
-	$usuario->login("johnny","987654");
-	echo $usuario;
+	//$usuario = new Usuario();
+	//$usuario->login("johnny","987654");
+	//echo $usuario;
+
+	$aluno = new Usuario("aluno","@lun0");
+
+
+	$aluno->insert();
+
+	echo $aluno;
+
+
  ?>
