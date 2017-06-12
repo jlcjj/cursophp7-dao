@@ -5,10 +5,26 @@
 	//$sql = new Sql();
 
 	//$usuarios = $sql->select("SELECT * FROM tb_usuarios");
-	$root = new Usuario();
+	//carrega um usuario
+	/*$root = new Usuario();
 	$root->loadbyid(4);
+	echo $root;*/
+	
 
-	echo $root;
-	//echo json_encode($usuarios);
+	//carrega lista
+	//$lista = Usuario::getList();
 
+	//echo json_encode($lista);
+
+
+	//carrega lista por usuario buscando pelo login
+	//$search = Usuario::search("r");
+
+	//echo json_encode($search);
+
+
+	//carrega um usuario usando login e senha
+	$usuario = new Usuario();
+	$usuario->login("johnny","987654");
+	echo $usuario;
  ?>
