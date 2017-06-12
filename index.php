@@ -44,8 +44,6 @@
 	//Deletando linha
 	$usuario = new Usuario();
 	$usuario->loadByid(7);
-
 	$usuario->delete();
-
 	echo $usuario;
  ?>
